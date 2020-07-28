@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function SearchTextBox(props)
 {
-    const {setSearchText} = props;
+    const {setSearchText, searchText} = props;
  
     function onTextChange(e){
       
@@ -14,7 +14,7 @@ export default function SearchTextBox(props)
     return(
         <>
             <p>Search Text
-            <input type="text" onChange={onTextChange} ></input></p>
+            <input type="text" onChange={onTextChange} value={searchText}></input></p>
         </>   
     )
 };

@@ -18,7 +18,8 @@ const [searchText, setSearchText] = useState('');
 
   return (
     <div>
-      <SearchTextBox  setSearchText ={setSearchText}/>
+      <button onClick={() => setSearchText('')}>Reset Filter</button>
+      <SearchTextBox  setSearchText ={setSearchText} searchText={searchText}/>
       <ListItems list={List} searchText={searchText} ></ListItems>    
       
     </div>

@@ -6,7 +6,7 @@ export default function UserProfile(props){
         <>
         <h1>Hi {userName}</h1>
         <h2>your password is: {password}</h2>
-    <    h3>you leav in: {selectedCity} city in {selectedCountry} country  </h3>
+    <    h3>You live in the city of {selectedCity} in {selectedCountry}   </h3>
         </>
     )
     
